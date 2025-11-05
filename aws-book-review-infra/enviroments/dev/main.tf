@@ -9,11 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "terraform-state-bookreview"  # Change this
-    key            = "dev/terraform.tfstate"
+    bucket         = "terraform-backend-ansible"  # Change this
+    key            = "tfstate"
     region         = "us-east-1"                   # Change this
     encrypt        = true
-    dynamodb_table = "terraform-state-lock"        # Optional: for state locking
+    dynamodb_table = "terraform-locks-ansible"        # Optional: for state locking
   }
 }
 
