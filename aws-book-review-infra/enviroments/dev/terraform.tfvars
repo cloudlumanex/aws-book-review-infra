@@ -12,3 +12,4 @@ db_instance_class    = "db.t3.micro"
 db_name              = "bookreview"
 db_username          = "bookadmin"
 db_password          = "Geology5565021"  # Change this or use variable
+
